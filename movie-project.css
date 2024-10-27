@@ -391,5 +391,6 @@ h1 {
 
     .custom-select {
         font-size: 15px;
+        height: 70px;
     }
 }
