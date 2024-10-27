@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Monofett&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monofett&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  padding: 96px 24px;
+}
+
+.container__logo {
+  padding: 0 24px;
+}
+
+.row {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__title,
+.section__title {
+  font-size: 90px;
+  font-family: "Permanent Marker", cursive;
+  line-height: 1;
+}
+
+/* 
+
+    KEYFRAMES
+
+*/
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateY(-2px);
+    }
+  
+    100% {
+      transform: translateY(-8px);
+    }
+  }
+
+
+/* 
+
+    BUTTONS AND HAMBURGER MENU
+
+*/
+
+.btn {
+  color: #fff;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 12px 30px;
+  margin-right: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+  cursor: not-allowed;
+}
+
+.btn__hover-effect:hover {
+  transform: translateX(8px);
+}
+
+.btn__menu {
+  background-color: transparent;
+  font-size: 35px;
+  text-align: center;
+  border: none;
+  color: #6e474f;
+  display: none;
+  cursor: pointer;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: rgb(110, 71, 79);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.menu__link {
+  font-size: 40px;
+  color: #fff;
+  border-bottom: 3px solid transparent;
+  transition: all 350ms ease;
+}
+
+.menu__link:hover {
+  color: #c39fa6;
+  border-bottom: 3px solid #c39fa6;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: #fff;
+  transition: all 350ms ease;
+}
+
+.btn__menu--close:hover {
+  color: #c39fa6;
+}
+
+/* 
+
+    NAVIGATION
+
+*/
+
+.primary-header.sticking {
+  color: #fff3f7;
+  background: rgb(190, 165, 169, 0.75);
+}
+
+.nav__height-100 {
+    height: 100%;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  transition: background-color 550ms;
+  animation: fade-in 1200ms 800ms backwards;
+}
+
+.nav__link--list {
+  display: flex;
+}
+
+.nav__link {
+  margin: 0 16px;
+}
+
+.nav__link--anchor {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+}
+
+.link__hover-effect:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.title {
+  font-size: 50px;
+  animation: fade-in 1200ms 800ms backwards;
+}
+
+.primary-header.sticking {
+  background: rgba(254, 206, 225, 0.78);
+}
+
+.third-header_scroll-down.sticky {
+  background: transparent;
+}
+
+/* 
+
+    LANDING PAGE
+
+*/
+
+#landing-page {
+  background: url(./assets/Logo-header.jpeg);
+  min-height: 100vh;
+  background-position: 50%;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.header__description {
+  margin-top: 30px;
+  width: 370px;
+  line-height: 1.9;
+}
+
+.header__sub-title {
+  margin-bottom: 25px;
+}
+
+/* 
+
+    ABOUT
+
+*/
+
+#about {
+  min-height: 100vh;
+  background: linear-gradient(
+    245deg,
+    #f2d5dc 0%,
+    #f5acba 24.53%,
+    #fbafbb 75.52%
+  );
+}
+
+.box__wrapper {
+  display: flex;
+}
+
+.box__info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__sub-title {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.section__sub-title-secondary {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section__description--para {
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 45px 0 40px 0;
+  width: 650px;
+}
+
+.box__info-left {
+  width: 50%;
+}
+
+.box__info--img {
+  width: 100%;
+  border-top: 5px solid #ffe3eb;
+  border-bottom: 5px solid #ffe3eb;
+  border-radius: 25%;
+}
+
+/* 
+
+    LIP GLOSS
+
+*/
+
+#lip-gloss {
+  background: linear-gradient(
+    30deg,
+    #f3f2f7 0%,
+    #f5acba 36.23%,
+    #f3f2f7 75.52%
+  );
+}
+
+.box__info--img-lipGloss {
+  width: 50%;
+}
+
+/* 
+
+    GLOSS DRRP
+
+*/
+
+#glossdrip {
+  background: linear-gradient(
+    -40deg,
+    #e0cccc 0%,
+    #f5acba 36.23%,
+    #e0cccc 75.52%
+  );
+}
+
+/* 
+
+    UPCOMING
+
+*/
+
+#upcoming {
+  background: url(./assets/Kylie-background.jpeg);
+  min-height: 100vh;
+  background-position: 50%;
+  position: relative;
+}
+
+.upcoming__container {
+  padding: 15%;
+}
+
+/* 
+
+    ICONS
+
+*/
+
+.icons {
+  position: fixed;
+  top: 45%;
+  padding: 0 6%;
+  transform: translateY(-50%);
+  z-index: 1003;
+}
+
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: not-allowed;
+}
+
+.icons i:hover {
+  color: #6e474f;
+  transform: translateY(-5px);
+}
+
+.scroll {
+position: absolute;
+  bottom: 6%;
+  right: 9%;
+  transform: translateX(-50%);
+}
+
+.scroll__icon {
+  width: 20px;
+  height: 30px;
+  border: 2px solid #6e474f;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-arrow-up {
+  font-size: 22px;
+  padding: 16px;
+  background-color: #6e474f;
+  border-radius: 50%;
+  color: #f3f2f7;
+  transition: all 0.5s ease;
+  animation: scroll 800ms infinite alternate-reverse;
+}
+
+.fa-arrow-up.sr-up {
+    display: block;
+    animation: fade-in 500ms ease;
+}
+
+.scroll__icon::after {
+  content: "";
+  width: 4px;
+  height: 6px;
+  background-color: #6e474f;
+  border-radius: 2px;
+  animation: scroll 1000ms infinite alternate-reverse;
+}
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 1660px) {
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+
+  .scroll-up {
+    right: 3%;
+    transition: 0.2s;
+  }
+  .container {
+    padding: 96px;
+  }
+
+  .upcoming__container {
+    padding: 15% 15% 15% 8%;
+  }
+}
+
+@media (max-width: 1460px) {
+  .header__title {
+    font-size: 82px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .icons {
+    padding: 0 1%;
+  }
+
+  .section__description--para {
+    font-size: 15px;
+    width: 500px;
+  }
+
+  .box__info-right {
+    text-align: end;
+  }
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 40px;
+  }
+  .nav__link--anchor {
+    font-size: 16px;
+  }
+  .box__wrapper,
+  .header__container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box__info-right {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    width: 50%;
+  }
+
+  header {
+    width: 50%;
+  }
+
+  .box__info-left {
+    width: inherit;
+  }
+}
+
+@media (max-width: 990px) {
+  .title {
+    font-size: 36px;
+  }
+  .nav__link--list {
+    display: none;
+  }
+
+  .link__hover-effect:hover {
+    border-bottom: 2px solid #6e474f;
+  }
+
+  #menu-icon,
+  .btn__menu {
+    display: block;
+  }
+}
+
+@media (max-width: 828px) {
+  .section__title {
+    font-size: 72px;
+  }
+  .section__description--para {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    width: 70%;
+  }
+}
+
+@media (max-width: 680px) {
+  .box__info-right {
+    width: 100%;
+  }
+
+  .box__info--img-lipGloss {
+    width: 70%;
+  }
+
+  .upcoming__container {
+    padding-top: 48%;
+  }
+
+  .menu__link {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .icons {
+      display: none;
+  }
+
+  #lip-gloss {
+    background: linear-gradient(
+      120deg,
+      #f3f2f7 3%,
+      #f5acba 36.23%,
+      #f3f2f7 75.52%
+    );
+  }
+  
+
+  .container {
+    padding: 96px 24px;
+  }
+
+  header {
+    width: 80%;
+  }
+
+  .header__title,
+  .section__title {
+    font-size: 50px;
+  }
+
+  .header__description {
+    width: 100%;
+  }
+
+  .section__description--para {
+    font-size: 13px;
+  }
+
+  .btn {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  #upcoming {
+    background-size: cover;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+}
