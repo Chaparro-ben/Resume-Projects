@@ -11,7 +11,7 @@ async function main(searchTerm, sortOrder = 'latest') {
     const moviesData = await movieResponse.json()
     
     if (!moviesData.Search) {
-        movieList.innerHTML = '<p>No results found</p>';
+        movieList.innerHTML = '<p class="no-result">No results found :(</p>';
         return;
     }
 

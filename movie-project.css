@@ -30,6 +30,13 @@ a {
     padding: 84px 24px;
 }
 
+.no-result {
+    font-size: 36px;
+    color: #882c6f;
+    font-weight: 700;
+
+}
+
 @keyframes fade-in {
     0%{
         opacity: 0;
@@ -264,6 +271,7 @@ h1 {
 .movie-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .movie-card {
@@ -284,7 +292,6 @@ h1 {
 .movie-card > img {
     width: 100%;
     height: 500px;
- 
 }
 
 .movie {
@@ -314,10 +321,6 @@ h1 {
 }
 
 .hide-movie-list {
-    display: none;
-}
-
-.hide-filter {
     display: none;
 }
 
@@ -370,7 +373,6 @@ h1 {
 
     .search__title {
         font-size: 24px;
-        margin-bottom: 12px;
     }
 
     .header__container {
@@ -387,12 +389,8 @@ h1 {
         background-repeat: no-repeat;
     }
 
-    .search__wrapper {
-        
-    }
-
     .custom-select {
-        width: 100px;
-        height: 100px;
+        padding: 10px;
+        font-size: 15px;
     }
 }

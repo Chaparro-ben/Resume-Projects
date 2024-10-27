@@ -48,11 +48,10 @@
     <section id="movie-results">
       <div class="container">
         <div class="row">
-          <div class="search-results-list" id="search-results-list">
+          <div class="search-results-list">
             <div class="search__wrapper">
-              <h2 class="search__title">Search Results</h2>
+              <h2 class="search__title" id="search-results-list">Search Results</h2>
               <select id="year-filter" onchange="findMovies()" class="custom-select">
-                <option value="" disabled selected>Sort</option>
                 <option value="latest">Latest - Oldest</option>
                 <option value="oldest">Oldest - Latest</option>
               </select>
