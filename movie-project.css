@@ -391,4 +391,9 @@ h1 {
     .custom-select {
         font-size: 15px;
     }
+
+    .no-result {
+        margin-top: 32px;
+        font-size: 30px;
+    }
 }
