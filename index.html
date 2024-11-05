@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/personalicon.ico" type="image/x-icon">
     <title>Treact</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/ff2ae56bdf.js" crossorigin="anonymous"></script>
@@ -17,13 +18,13 @@
               ><img src="./assets/treact__logo.svg" class="logo" />Treact</a
             >
             <ul class="nav__link--list">
-              <li><a href="" class="nav__link">About</a></li>
-              <li><a href="" class="nav__link">Blog</a></li>
-              <li><a href="" class="nav__link">Pricing</a></li>
-              <li><a href="" class="nav__link">Contact Us</a></li>
-              <li><a href="" class="nav__link">Login</a></li>
+              <li class="nav__link"><a href="#service" class="nav__link--anchor link__hover--effect">About</a></li>
+              <li class="nav__link"><a href="#professionals" class="nav__link--anchor link__hover--effect">Blog</a></li>
+              <li class="nav__link"><a href="#pricing" class="nav__link--anchor link__hover--effect">Pricing</a></li>
+              <li class="nav__link"><a href="#" class="nav__link--anchor link__hover--effect no__cursor">Contact Us</a></li>
+              <li class="nav__link"><a href="#" class="nav__link--anchor link__hover--effect no__cursor">Login</a></li>
               <li>
-                <a href="#" class="nav__link--primary">Sign Up</a>
+                <a href="#" class="nav__link--primary no__cursor">Sign Up</a>
               </li>
             </ul>
 
@@ -36,12 +37,13 @@
                 <i class="fas fa-times"></i>
               </button>
               <ul class="menu__links">
-                <li class="menu__list"><a href="" onclick="closeMenu()" class="menu__link">About</a></li>
-                <li class="menu__list"><a href="" onclick="closeMenu()" class="menu__link">Blog</a></li>
-                <li class="menu__list"><a href="" onclick="closeMenu()" class="menu__link">Pricing</a></li>
-                <li class="menu__list"><a href="" onclick="closeMenu()" class="menu__link">Contact Us</a></li>
+                <li class="menu__list"><a href="#service" onclick="closeMenu()" class="menu__link link__hover--effect">About</a></li>
+                <li class="menu__list"><a href="#professionals" onclick="closeMenu()" class="menu__link link__hover--effect">Blog</a></li>
+                <li class="menu__list"><a href="#pricing" onclick="closeMenu()" class="menu__link link__hover--effect">Pricing</a></li>
+                <li class="menu__list"><a href="#" onclick="closeMenu()" class="menu__link link__hover--effect no__cursor">Contact Us</a></li>
+                <li class="menu__list"><a href="#" onclick="closeMenu()" class="menu__link no__cursor link__hover--effect">Login</a></li>
                 <li class="menu__list">
-                  <a href="" onclick="closeMenu()" class="menu__link no-cursor">Sign Up</a>
+                  <a href="" onclick="closeMenu()" class="menu__link no__cursor link__hover--effect">Sign Up</a>
                 </li>
               </ul>
             </div>
@@ -64,7 +66,7 @@
                 </p>
                 <div class="input__btn">
                   <input type="text" placeholder="Your E-mail Address" />
-                  <button class="btn--absolute">Get Started</button>
+                  <button class="btn--absolute no__cursor">Get Started</button>
                 </div>
                 <div class="logo__container">
                   <p>OUR TRUSTED CUSTOMERS</p>
@@ -209,7 +211,7 @@
                 <h2 class="professionals__subtitle">Designed & Developed by <span class="purple">Professionals.</span></h2>
                 <p class="professionals__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <button class="btn__learn-more">Learn More</button>
+                <button class="btn__learn-more no__cursor">Learn More</button>
             </div>
             <div class="professionals__img--wrapper">
               <div>
@@ -304,7 +306,7 @@
                   </p>
                 </div>
               </div>  
-              <button class="btn__learn-more">Learn More</button>
+              <button class="btn__learn-more no__cursor">Learn More</button>
           
             </div>
             <figure class="values__img--wrapper">
@@ -341,7 +343,7 @@
                 <span class="features">Basic Assistance</span>
               </div>
               <div class="plans__btn--container">
-                <button class="plans__btn">Buy now</button>
+                <button class="plans__btn no__cursor">Buy now</button>
               </div>
             </div>
             <div class="plans__bg--blue">
@@ -358,7 +360,7 @@
                 <span class="features">Priority Assistance</span>
               </div>
               <div class="plans__btn--container">
-                <button class="plans__btn">Buy now</button>
+                <button class="plans__btn no__cursor">Buy now</button>
               </div>
             </div>
             <div class="plans">
@@ -376,7 +378,7 @@
                 <span class="features">Personal Assistance</span>
               </div>
               <div class="plans__btn--container">
-                <button class="plans__btn btn--red">Buy now</button>
+                <button class="plans__btn btn--red no__cursor">Buy now</button>
               </div>
             </div>
           </div>
@@ -444,8 +446,8 @@
                 </span>
               </div>
               <div class="get__started--btn--container">
-                <button class="get__started--btn">Get Started</button>
-                <button class="get__started--btn--contact">Contact Us</button>
+                <button class="get__started--btn no__cursor">Get Started</button>
+                <button class="get__started--btn--contact no__cursor">Contact Us</button>
               </div>
             </div>
           </div>
@@ -460,47 +462,47 @@
             <li class="link--title">
               Main
             </li>
-            <li class="link"><a href="" class="link--anchor">Blog</a></li>
-            <li class="link"><a href="" class="link--anchor">FAQs</a></li>
-            <li class="link"><a href="" class="link--anchor">Support</a></li>
-            <li class="link"><a href="" class="link--anchor">About Us</a></li>
+            <li class="link"><a href="#professionals" class="link--anchor">Blog</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">FAQs</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Support</a></li>
+            <li class="link"><a href="#" class="link--anchor">About Us</a></li>
           </ul>
 
           <ul class="link--list">
             <li class="link--title">
               Product
             </li>
-            <li class="link"><a href="" class="link--anchor">Log In</a></li>
-            <li class="link"><a href="" class="link--anchor">Personal</a></li>
-            <li class="link"><a href="" class="link--anchor">Business</a></li>
-            <li class="link"><a href="" class="link--anchor">Team</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Log In</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Personal</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Business</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Team</a></li>
           </ul>
           <ul class="link--list">
             <li class="link--title">
               Press
             </li>
-            <li class="link"><a href="" class="link--anchor">Logos</a></li>
-            <li class="link"><a href="" class="link--anchor">Events</a></li>
-            <li class="link"><a href="" class="link--anchor">Stories</a></li>
-            <li class="link"><a href="" class="link--anchor">Office</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Logos</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Events</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Stories</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Office</a></li>
           </ul>
           <ul class="link--list">
             <li class="link--title">
               Team
             </li>
-            <li class="link"><a href="" class="link--anchor">Career</a></li>
-            <li class="link"><a href="" class="link--anchor">Founders</a></li>
-            <li class="link"><a href="" class="link--anchor">Culture</a></li>
-            <li class="link"><a href="" class="link--anchor">Onboarding</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Career</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Founders</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Culture</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Onboarding</a></li>
           </ul>
           <ul class="link--list">
             <li class="link--title">
               Legal
             </li>
-            <li class="link"><a href="" class="link--anchor">GDPR</a></li>
-            <li class="link"><a href="" class="link--anchor">Privacy Policy</a></li>
-            <li class="link"><a href="" class="link--anchor">Terms of Service</a></li>
-            <li class="link"><a href="" class="link--anchor">Disclaimer</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">GDPR</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Privacy Policy</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Terms of Service</a></li>
+            <li class="link"><a href="#" class="link--anchor no__cursor">Disclaimer</a></li>
           </ul>
         </div>
         <div class="divider"></div>

@@ -60,18 +60,41 @@ li {
     list-style-type: none;
 }
 
+.no__cursor {
+    cursor: not-allowed;
+}
+
+/* 
+
+    NAVIGATION
+    
+*/
+
 .nav__link {
     margin: 0 24px;
-    font-size: 14px;
-    font-weight: 600;
     padding-bottom: 4px;
-    letter-spacing: 0.4px;
 }
 
 .nav__link > li:nth-child(5) {
     margin-left: 32px;
 }
-.nav__link::after {
+
+.nav__link--anchor {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #242424;
+}
+
+.link__hover--effect {
+    position: relative;
+}
+
+.link__hover--effect:hover {
+    color: rgb(100, 21, 255);
+}
+
+.link__hover--effect::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -82,10 +105,20 @@ li {
     transition: all 300ms ease;
 }
 
-.nav__link:hover:after {
+.link__hover--effect:hover:after {
     width: 100%;
     left: 0;
 }
+
+.nav__link--primary {
+    background-color: rgb(100, 21, 255);
+    color: rgb(247, 250, 252);
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 12px 32px;
+    transition: all 300ms ;
+}
+
 
 
 button {
@@ -133,15 +166,6 @@ footer {
     }
 }
 
-.nav__link--primary {
-    background-color: rgb(100, 21, 255);
-    color: rgb(247, 250, 252);
-    border-radius: 50px;
-    font-weight: 600;
-    padding: 12px 32px;
-    transition: all 300ms ;
-}
-
 .nav__link--primary:hover,
 .btn--absolute:hover,
 .btn__learn-more:hover {
@@ -154,7 +178,7 @@ footer {
     color: rgb(247, 250, 252);
     border-radius: 50px;
     font-weight: 700;
-    padding: 16px 0;
+    padding: 13px 0;
     position: absolute;
     right: 0px; 
     top: 0px;
@@ -277,8 +301,6 @@ footer {
 .right-column {
     width: 60%;
 }
-
-
 
 .subheader {
     margin: 32px 0;
@@ -1064,26 +1086,14 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+    
     .plans__container {
         flex-direction: column;
         align-items: center;
     }
-
-    .plans,
-    .plans__bg--blue {
-        width: 40%;
-    }
-}
-
-@media (max-width: 828px) {
-    .nav__link--list {
-        display: none;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
     
     .two-columns {
         flex-direction: column;
@@ -1094,7 +1104,26 @@ footer {
     .left-column {
         width: 70%;
     }
-    
+
+    .plans,
+    .plans__bg--blue {
+        width: 40%;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
+    .nav__link--list {
+        display: none;
+    }
+}
+
+@media (max-width: 828px) {
+    h1 {
+        font-size: 30px;
+    }
+
     .logo__container {
         display: flex;
         align-items: center;
@@ -1104,11 +1133,7 @@ footer {
     
     .title__logo {
         margin-bottom: 16px;
-    }
-    
-    .btn__menu {
-        display: block;
-    }
+    } 
     
     .box {
         width: calc(100% /2);
